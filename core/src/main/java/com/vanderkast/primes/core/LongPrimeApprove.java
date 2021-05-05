@@ -1,4 +1,4 @@
-package com.vanderkast.primes.domain;
+package com.vanderkast.primes.core;
 
 import static java.lang.StrictMath.sqrt;
 

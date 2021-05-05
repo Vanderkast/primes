@@ -1,0 +1,14 @@
+plugins {
+    id 'java-convention'
+}
+
+group 'com.vanderkast.primes.core'
+version '1.0-SNAPSHOT'
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'com.vanderkast.primes.ConsoleApp'
+        )
+    }
+}

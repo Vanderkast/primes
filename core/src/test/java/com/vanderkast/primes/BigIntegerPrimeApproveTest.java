@@ -1,16 +1,18 @@
 package com.vanderkast.primes;
 
-import com.vanderkast.primes.domain.LongPrimeApprove;
-import com.vanderkast.primes.domain.PrimeApprove;
+import com.vanderkast.primes.core.BigIntegerPrimeApprove;
+import com.vanderkast.primes.core.PrimeApprove;
 import org.junit.jupiter.api.Test;
+
+import java.math.BigInteger;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-class LongPrimeApproveTest {
-    private static final Long PRIME_61 = 61L;
-    private static final Long PRIME_215_737 = 215_737L;
-    private final PrimeApprove<Long> approve = new LongPrimeApprove();
+class BigIntegerPrimeApproveTest {
+    private static final BigInteger PRIME_61 = BigInteger.valueOf(61);
+    private static final BigInteger PRIME_215_737 = BigInteger.valueOf(215_737);
+    private final PrimeApprove<BigInteger> approve = new BigIntegerPrimeApprove();
 
     @Test
     void _61() {
@@ -33,7 +35,7 @@ class LongPrimeApproveTest {
     @Test
     void multiplied() {
         // given
-        var fool = PRIME_61 * PRIME_215_737;
+        var fool = PRIME_215_737.multiply(PRIME_61);
 
         // when
         var guess = approve.isPrime(fool);

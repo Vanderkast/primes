@@ -1,8 +1,8 @@
 package com.vanderkast.primes;
 
-import com.vanderkast.primes.domain.BigIntegerPrimeApprove;
-import com.vanderkast.primes.domain.LongPrimeApprove;
-import com.vanderkast.primes.domain.PrimeApproveFacade;
+import com.vanderkast.primes.core.BigIntegerPrimeApprove;
+import com.vanderkast.primes.core.LongPrimeApprove;
+import com.vanderkast.primes.core.PrimeApproveFacade;
 
 public class ConsoleApp {
     public static void main(String[] args) {

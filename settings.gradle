@@ -1,2 +1,2 @@
 rootProject.name = 'primes'
-
+include 'core'
